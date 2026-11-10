@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Companion website for Towards Intelligent Immersive Healthcare: A Systematic Review on the Integration of AI and XR in Medical Applications.">
+  <meta name="theme-color" content="#096b60">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Towards Intelligent Immersive Healthcare">
+  <meta property="og:description" content="A systematic review on the integration of AI and XR in medical applications, synthesising 41 clinically relevant empirical studies.">
+  <title>Towards Intelligent Immersive Healthcare: A Systematic Review on the Integration of AI and XR in Medical Applications</title>
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="stylesheet" href="style.css">
+  <script src="paper-viewer.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#papers-container">Skip to the paper catalogue</a>
+  <div class="page-container">
+    <nav class="site-nav" aria-label="Main navigation">
+      <a class="wordmark" href="#top"><span class="brand-mark" aria-hidden="true">+</span> AI × XR <span class="wordmark-divider">/</span> Healthcare</a>
+      <div class="nav-links">
+        <a class="nav-link" href="#integration">Integration</a>
+        <a class="nav-link" href="#evidence">Evidence</a>
+        <a class="nav-link" href="#papers-container">Studies</a>
+        <a class="nav-link nav-paper" href="assets/review-paper.pdf" target="_blank" rel="noopener">Paper <span aria-hidden="true">↗</span></a>
+      </div>
+    </nav>
+
+    <header class="hero" id="top">
+      <p class="eyebrow">Systematic literature review · PRISMA-guided</p>
+      <h1><span class="title-main">Towards Intelligent <br>Immersive Healthcare<span class="sr-only">:</span></span> <span class="title-subtitle">A Systematic Review on the Integration of AI and XR<br class="wide-break"> in Medical Applications</span></h1>
+      <p class="intro-text">How are artificial intelligence and extended reality connected in clinical tasks, and how far have these systems progressed towards real-world use? We map the evidence across 41 clinically relevant empirical studies.</p>
+      <div class="hero-actions">
+        <a class="primary-link" href="assets/review-paper.pdf" target="_blank" rel="noopener">Read the paper <span aria-hidden="true">↗</span></a>
+        <a class="quiet-link" href="#papers-container">Explore the studies <span aria-hidden="true">↓</span></a>
+      </div>
+    </header>
+
+    <dl class="review-stats" aria-label="Review at a glance">
+      <div><dt>Included studies</dt><dd>41</dd></div>
+      <div><dt>Records identified</dt><dd>433</dd></div>
+      <div><dt>Research databases</dt><dd>3</dd></div>
+      <div><dt>Publication window</dt><dd class="stat-years">2020–2025</dd></div>
+    </dl>
+
+    <section class="landscape section" id="landscape" aria-labelledby="landscape-title">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">The AI–XR landscape</p>
+          <h2 id="landscape-title">From immersive technology to clinical integration</h2>
+        </div>
+        <button class="text-button" id="expand-figure" type="button" aria-haspopup="dialog">Expand figure <span aria-hidden="true">↗</span></button>
+      </div>
+      <figure class="landscape-figure">
+        <div class="figure-scroll" tabindex="0" role="region" aria-label="AI–XR integration diagram; scroll horizontally on smaller screens">
+          <img src="assets/integration-map.svg" width="1476" height="554" alt="Alluvial diagram connecting XR type to AI method family and integration mode across 41 studies. XR types: VR 22, AR/MR 17, and both AR and VR 2. Integration modes: closed-loop 18, one-way 12, and data-driven offline 11. Flow widths represent study counts." fetchpriority="high">
+        </div>
+        <figcaption><span>Figure 1.</span> Immersive type, AI method family and integration mode across the included studies. Flow width represents study counts. <a href="assets/integration-map.pdf" target="_blank" rel="noopener">Original figure PDF ↗</a></figcaption>
+      </figure>
+      <p class="figure-note">On small screens, scroll across the diagram or expand it for a closer look.</p>
+    </section>
+
+    <section class="section integration-section" id="integration" aria-labelledby="integration-title">
+      <div class="section-heading">
+        <div><p class="eyebrow">A functional view</p><h2 id="integration-title">Three ways AI and XR work together</h2></div>
+        <a class="source-link" href="assets/review-paper.pdf#page=6" target="_blank" rel="noopener">Section 4.4 ↗</a>
+      </div>
+      <p class="section-intro">The review distinguishes integration by information flow, the timing of AI analysis and the role of feedback within a clinical task.</p>
+      <div class="mode-grid">
+        <article class="mode-card mode-closed">
+          <div class="mode-top"><span class="mode-dot" aria-hidden="true"></span><span class="mode-count">18 <span>studies</span></span></div>
+          <h3>Closed-loop integration</h3>
+          <p>AI analyses user behaviour, performance or physiological signals and updates the immersive task or feedback in real time.</p>
+          <p class="mode-example">Common pattern in rehabilitation: adaptive feedback and assistance during training.</p>
+        </article>
+        <article class="mode-card mode-oneway">
+          <div class="mode-top"><span class="mode-dot" aria-hidden="true"></span><span class="mode-count">12 <span>studies</span></span></div>
+          <h3>One-way integration</h3>
+          <p>AI generates information such as segmentation, registration or planning outputs, which XR presents within an immersive or spatial interface.</p>
+          <p class="mode-example">Common pattern in surgery: visualising anatomy for planning and navigation.</p>
+        </article>
+        <article class="mode-card mode-offline">
+          <div class="mode-top"><span class="mode-dot" aria-hidden="true"></span><span class="mode-count">11 <span>studies</span></span></div>
+          <h3>Data-driven offline integration</h3>
+          <p>XR elicits or structures data that AI analyses after or outside the immersive session, without real-time feedback into the environment.</p>
+          <p class="mode-example">Common pattern in mental health: analysing behavioural, speech or physiological data.</p>
+        </article>
+      </div>
+      <p class="integration-takeaway"><span>Key finding</span> Integration patterns follow the clinical task more closely than the AI method family or display hardware.</p>
+    </section>
+
+    <section class="section evidence-section" id="evidence" aria-labelledby="evidence-title">
+      <div class="section-heading"><div><p class="eyebrow">What the evidence shows</p><h2 id="evidence-title">Clinical breadth, with evaluation still at an early stage</h2></div></div>
+      <div class="evidence-grid">
+        <article class="evidence-card">
+          <div class="card-heading"><h3>Application domains</h3><span>41 studies</span></div>
+          <table class="summary-table">
+            <caption class="sr-only">Number of included studies by application domain</caption>
+            <thead><tr><th scope="col">Clinical domain</th><th scope="col">Studies</th></tr></thead>
+            <tbody>
+              <tr><th scope="row">Surgery</th><td>13</td></tr>
+              <tr><th scope="row">Mental health</th><td>10</td></tr>
+              <tr><th scope="row">Rehabilitation</th><td>9</td></tr>
+              <tr><th scope="row">Supportive and care-related applications</th><td>4</td></tr>
+              <tr><th scope="row">Neurology</th><td>3</td></tr>
+              <tr><th scope="row">Diagnostics and pathology</th><td>1</td></tr>
+              <tr><th scope="row">Public health</th><td>1</td></tr>
+            </tbody>
+          </table>
+          <p class="card-source">Source: <a href="assets/review-paper.pdf#page=4" target="_blank" rel="noopener">Section 4.2</a>. Intended users: patients (25), clinicians (13), mixed users (3).</p>
+        </article>
+        <article class="evidence-card readiness-card">
+          <div class="card-heading"><h3>Clinical implementation maturity</h3><span>TRL 5–7</span></div>
+          <table class="summary-table readiness-table">
+            <caption class="sr-only">Technology readiness levels of the included systems</caption>
+            <thead><tr><th scope="col">Evaluation stage</th><th scope="col">Studies</th></tr></thead>
+            <tbody>
+              <tr><th scope="row"><strong>TRL 5</strong><span>Validation using human participant-related data</span></th><td>3</td></tr>
+              <tr><th scope="row"><strong>TRL 6</strong><span>Prototype testing in a small human cohort</span></th><td>27</td></tr>
+              <tr><th scope="row"><strong>TRL 7</strong><span>Testing in a larger human cohort</span></th><td>11</td></tr>
+            </tbody>
+          </table>
+          <div class="evidence-callout"><strong>No included study demonstrated large-scale testing or routine clinical adoption.</strong><p>Although 39 studies reported positive outcomes, this coding describes the direction of findings, rather than the magnitude or strength of clinical benefit.</p></div>
+          <p class="card-source">Source: <a href="assets/review-paper.pdf#page=7" target="_blank" rel="noopener">Section 4.5</a> and <a href="assets/review-paper.pdf#page=8" target="_blank" rel="noopener">Table 4</a>. TRL describes development and evaluation maturity.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section review-section" id="review" aria-labelledby="review-title">
+      <div class="section-heading"><div><p class="eyebrow">About the review</p><h2 id="review-title">A systematic view of clinically relevant AI–XR research</h2></div></div>
+      <div class="review-grid">
+        <div>
+          <p class="review-description">We synthesised peer-reviewed empirical research in which AI and XR were functionally connected within the same clinical task, system, workflow or data pathway. Studies involved human participants or human participant data.</p>
+          <details class="abstract-details">
+            <summary>Read the abstract</summary>
+            <p>The integration of Artificial Intelligence (AI) and Extended Reality (XR) offers opportunities to develop more adaptive, interactive, and context-aware healthcare systems. However, evidence on how these technologies are integrated into clinically relevant applications remains fragmented, with substantial variation in their roles, technologies, users, and evaluation approaches. This systematic review synthesises 41 clinically relevant empirical studies to characterise AI-XR integration across application domains, users, AI methods, XR technologies, integration approaches, reported outcomes, and clinical implementation maturity. Following PRISMA guidelines, the review systematically identified and analysed how existing studies combine AI and XR across medical applications. The findings show that AI-XR research has progressed beyond proof-of-principle, with systems increasingly evaluated with patients, clinicians, and clinical data across diverse applications. AI-XR applications were concentrated in surgery, mental health, and rehabilitation. Distinct integration modes emerged, with the relationship between AI and XR shaped primarily by the clinical task rather than the AI method or XR hardware. Despite generally positive reported outcomes, evidence remained concentrated in small-scale feasibility and pilot studies, with no study demonstrating large-scale testing or routine clinical adoption. These findings provide a structured view of the emerging AI-XR landscape and highlight the importance of task-specific integration, clinically meaningful interaction, and stronger evidence of implementation in real-world settings.</p>
+          </details>
+          <details class="questions-details">
+            <summary>The five research questions</summary>
+            <ol class="research-questions">
+              <li>What clinical domains and users are represented in AI-XR applications?</li>
+              <li>What AI methods and XR technologies are used?</li>
+              <li>How are AI and XR integrated within clinical tasks?</li>
+              <li>What outcomes have been reported, and how mature is clinical implementation?</li>
+              <li>What trends, limitations, and evidence gaps characterise AI-XR integration in healthcare?</li>
+            </ol>
+          </details>
+        </div>
+        <aside class="method-card" aria-labelledby="method-title">
+          <h3 id="method-title">Search and selection</h3>
+          <dl class="method-meta"><div><dt>Databases</dt><dd>PubMed · Scopus · Web of Science</dd></div><div><dt>Search date</dt><dd>24 February 2026</dd></div><div><dt>Eligible publications</dt><dd>1 January 2020 – 31 December 2025</dd></div></dl>
+          <ol class="screening-list">
+            <li><strong>433</strong><span>Records identified<small>94 duplicates removed</small></span></li>
+            <li><strong>339</strong><span>Titles and abstracts screened<small>220 records excluded</small></span></li>
+            <li><strong>119</strong><span>Full texts assessed<small>78 studies excluded</small></span></li>
+            <li><strong>41</strong><span>Studies included in the review</span></li>
+          </ol>
+          <p class="card-source">PRISMA-guided screening and narrative synthesis. <a href="assets/review-paper.pdf#page=3" target="_blank" rel="noopener">Methodology ↗</a></p>
+        </aside>
+      </div>
+    </section>
+
+    <main id="papers-container" aria-busy="true">
+      <div class="catalogue-header">
+        <div>
+          <p class="eyebrow">Explore the evidence</p>
+          <h2 id="catalogue-title">The 41 included studies</h2>
+          <p class="catalogue-description">Search titles, authors and keywords. Filter by AI method, XR technology or publication year.</p>
+        </div>
+        <a class="secondary-link" href="paperlist.csv" download="paperlist.csv">Download study CSV <span aria-hidden="true">↓</span></a>
+      </div>
+      <div id="viewer"><p class="loading" role="status">Loading the paper catalogue…</p></div>
+      <noscript><p class="load-error">Enable JavaScript to search and filter the catalogue, or download the CSV above.</p></noscript>
+      <p class="catalogue-provenance">Catalogue fields are transcribed from Tables 2–3 and the reference list. Bracketed reference numbers match the paper. Publication year for <a href="https://www.frontiersin.org/journals/psychiatry/articles/10.3389/fpsyt.2024.1504190/full" target="_blank" rel="noopener">[51]</a> uses the online publication date (2025); its journal volume is dated 2024.</p>
+    </main>
+
+    <section class="resources-section" id="resources" aria-labelledby="resources-title">
+      <div><p class="eyebrow">Resources</p><h2 id="resources-title">Read, explore and build on the review</h2><p>Access the manuscript, study catalogue and original overview figure.</p></div>
+      <div class="resource-links"><a href="assets/review-paper.pdf" target="_blank" rel="noopener">Manuscript <span>PDF ↗</span></a><a href="paperlist.csv" download="paperlist.csv">Study catalogue <span>CSV ↓</span></a><a href="assets/integration-map.pdf" target="_blank" rel="noopener">Overview figure <span>PDF ↗</span></a></div>
+    </section>
+
+    <footer class="site-footer">
+      <p>Towards Intelligent Immersive Healthcare</p>
+      <p>Companion to a PRISMA-guided systematic review.</p>
+    </footer>
+  </div>
+  <dialog class="figure-dialog" id="figure-dialog" aria-labelledby="figure-dialog-title">
+    <div class="dialog-header"><h2 id="figure-dialog-title">AI–XR integration landscape</h2><div class="dialog-actions"><button type="button" id="zoom-figure" class="dialog-button" aria-pressed="false">Zoom in</button><button type="button" id="close-figure" class="dialog-button">Close <span aria-hidden="true">×</span></button></div></div>
+    <div class="dialog-image-scroll" tabindex="0" role="region" aria-label="Expanded diagram; scroll to explore"><img src="assets/integration-map.svg" width="1476" height="554" alt="Expanded alluvial diagram of immersive type, AI method and integration mode. Closed-loop integration includes 18 studies, one-way 12, and data-driven offline 11."></div>
+    <p class="dialog-caption">Flow widths represent included-study counts. <a href="assets/integration-map.pdf" target="_blank" rel="noopener">Open original PDF ↗</a></p>
+  </dialog>
+</body>
+</html>
